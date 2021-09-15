@@ -12,21 +12,25 @@ def index():
 
 @app.route('/about', methods=['GET', 'POST'])
 def about():
+    # About page
     print("About Page")
     return render_template('about.html')
 
 @app.route('/experience', methods=['GET', 'POST'])
 def experience():
+    # Experience Page
     print('Experience Page')
     return render_template('experience.html')
 
 @app.route('/classes', methods=['GET', 'POST'])
 def classes():
+    # Class Page 
     print('Class Info')
     return render_template('classes.html')
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
+    # Contact Page 
     print('Contact Info')
     return render_template('contact.html')
 
