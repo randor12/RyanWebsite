@@ -1,6 +1,7 @@
 from flask import *
 
 app = Flask(__name__)
+app.config['TEMPLATES_AUTO_RELOAD'] = True
 app.secret_key = 'asdjfksa'
 
 @app.route('/', methods=['GET', 'POST'])
