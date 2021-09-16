@@ -4,19 +4,33 @@
 {% block content %}
 
 <div class="title">
-    <h3>Contact Info</h3>
+    <h3>Contact Info:</h3>
 </div>
 
-<div>
-    <h4 class="phone">
-        Phone Number: (203) 400-9614
-    </h4>
-    <h4 class="email">
-        Personal Email: ry12nicholas@gmail.com
-    </h4>
-    <h4 class="school-email">
-        School Email: rynicholas@vt.edu
-    </h4>
+<div class="container">
+    <div class="row">
+        <div class="image col">
+            <img src="{{ url_for('static', filename='img/hackathon.jpg') }}" width="100%">
+        </div>
+        <div class="info col">
+
+            <h4 class="phone">
+                Phone Number: (203) 400-9614
+            </h4>
+            <h4 class="email">
+                Personal Email: ry12nicholas@gmail.com
+            </h4>
+            <h4 class="school-email">
+                School Email: rynicholas@vt.edu
+            </h4>
+            <h4 class="git">
+                <a href="https://github.com/randor12">GitHub</a>
+            </h4>
+            <h4 class="linkedin">
+                <a href="https://www.linkedin.com/in/ryan-nicholas-62a095175/">LinkedIn</a>
+            </h4>
+        </div>
+    </div>
 </div>
 
 

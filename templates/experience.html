@@ -3,16 +3,65 @@
 
 {% block content %}
 
-<div class="title">
-    <h3>Experience:</h3>
-</div>
+<div class="container">
+    <h3>Work Experience:</h3>
+    <div class="row">
+        <div class="image col">
+            <img src="{{ url_for('static', filename='img/coding.jpg') }}" width="100%">
+        </div>
+        <div class="info col">
 
-<div class="jobs">
-    <h3>Jobs:</h3>
-</div>
-
-<div class="hackathons">
-    <h3>Hackathons:</h3>
+            <div class="jobs">
+                <ul class="job-list">
+                    <li>
+                        Bank of America, GTS Summer Analyst - Data Science Intern, June-August 2021
+                    </li>
+                    <li>
+                        Bank of America, GTS Summer Analyst - Data Science Intern, June-August 2020
+                    </li>
+                    <li>
+                        Systems Intern, Kyber Security, Spring and Winter 2020
+                    </li>
+                    <li>
+                        Software Developer Intern, Dynata, May-August 2019
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="hackathons">
+                <h3>Hackathons:</h3>
+                <ul class="hackathon-list">
+                    <li>
+                        <a href="https://github.com/mattgonley/ASLTranslator">SheHacks, American Sign Language Translation Application, 3rd Place</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/randor12/DeepFakeDetection">VTHacks7, Deep Fake Detection Application</a>
+                    </li>
+                    <li>
+                        Galileo Hackathon, 1st Place
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="projects">
+                <h3>Projects:</h3>
+                <ul class="project-list">
+                    <li>
+                        <a href="https://themonroesun.com/former-masuk-robotics-students-design-ventilators-in-columbia-university-challenge/">Columbia Ventilator Challenge</a>
+                    </li>
+                    <li>
+                        <a href="https://youtu.be/ccI-HgsViGw">Semi Finals at VEX Robotics World Championship</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/randor12/Mnist-Website">Mnist Website</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/randor12/RandorAssistant">Randor Assistant</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
 
 {% endblock %}

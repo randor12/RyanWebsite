@@ -1,23 +1,24 @@
 .cover {
     position: absolute;
-    top:50%;
+    top:59.5%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    max-height: 50%;
+    max-width: 50%;
 }
 
 .foot {
     width: 100%;
     height: 5%;
-    position: absolute;
-    top: 90%;
+    position:absolute;
+    top: 60em;
 }
 
 .bg {
-    background-image: url("img/coding.jpg");
+    background-image: url("img/cover_photo.JPG");
     border-radius: 50%;
-    height: 350px;
-    width: 100%;
-    background-position: center;
+    height: 30em;
+    background-position:70%;
     background-repeat: no-repeat;
     background-size: cover;
 }

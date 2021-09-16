@@ -3,12 +3,47 @@
 
 {% block content %}
 
-<div class="title">
-    <h3>About Page</h3>
-</div>
 
-<div class="image">
-    <img src="{{ url_for('static', filename='img/cover_photo.jpg') }}">
+<div class="container">
+    <div class="title">
+        <h3>About Me</h3>
+    </div>
+    <div class="row">
+
+        <div class="image col">
+            <img src="{{ url_for('static', filename='img/hike.jpg') }}" width="100%">
+        </div>
+
+        <div class="description col">
+            <h3>General Info:</h3>
+            <p>
+                Initially, I started programming in high school. After joining the robotics team,
+                I lead my team to the world championship for robotics where we would take semi finals 
+                at the world championship. It was from this experience I knew I wanted to go into technology. 
+                <br>
+                <br>
+                In August 2018, I started attending Virginia Tech for a Bachelors of Science in Computer Science. 
+                I got involved in a number of hackathons, starting with the Galileo Hackathon. I ended up working on 
+                a Virtual Reality Campus Tour. This ended up taking 1st place at the hackathon. 
+                <br>
+                <br>
+                I would end up taking 3rd at my next hackathon, SheHacks, in 2020, when I developed an American Sign Language Translator. One 
+                of my friends mentioned that they had someone who had difficulty getting their food at restaurants such as 
+                McDonalds due to the limited ability to communicate through Sign Language. In order to deal with this problem, 
+                my group developed an application in order to attempt to translate the Sign Language. 
+                <br>
+                <br>
+                Due to my involvement in hackathons, I ended up seeing the Bank of America coding challenge. I ended up 
+                winning this competition, and I was invited to join the Data and AI team for the Bank after my sophomore year.
+            </p>
+            <h3>Interests:</h3>
+            <p>
+                When I am not busy coding, I love to ski, hike, and play tennis in my free time. While at Virginia Tech, 
+                I would hike at Cascade Falls, Bald Knob which is shown on the left, and Dragons Tooth. 
+                
+            </p>
+        </div>
+    </div>
 </div>
 
 {% endblock %}
