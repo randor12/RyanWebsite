@@ -1,7 +1,8 @@
 from flask import *
 
-application = app = Flask(__name__)
-app.config['TEMPLATES_AUTO_RELOAD'] = True
+application = Flask(__name__)
+# app.config['TEMPLATES_AUTO_RELOAD'] = True
+app = application
 app.secret_key = 'asdjfksa'
 
 @app.route('/', methods=['GET', 'POST'])
@@ -35,4 +36,4 @@ def contact():
     return render_template('contact.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    application.run()
